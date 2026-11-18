@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AKA Labs – Cozy games and useful apps</title>
+<meta name="description" content="AKA Labs makes colourful, relaxing mobile games and useful apps.">
+<style>
+  :root {
+    --pink: #ff5c8a; --orange: #ff8a5c; --cream: #fff4e6; --peach: #ffd9bf;
+    --lilac: #d9c2ff; --choc: #5a3826; --muted: #7a6458;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; color: var(--choc);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    background:
+      radial-gradient(circle at 20px 20px, rgba(255,255,255,.45) 4px, transparent 5px) 0 0 / 46px 46px,
+      linear-gradient(180deg, var(--cream), var(--peach) 40%, #ffd3e0 70%, var(--lilac));
+    min-height: 100vh;
+  }
+  .hero { text-align: center; padding: 64px 20px 28px; }
+  .logo {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 92px; height: 92px; border-radius: 28px; font-weight: 900; font-size: 2rem;
+    color: #fff; background: linear-gradient(135deg, var(--pink), var(--orange));
+    border: 4px solid #fff; box-shadow: 0 10px 24px rgba(255,92,138,.35);
+  }
+  h1 { font-size: clamp(2.2rem, 7vw, 3.4rem); margin: 18px 0 6px; letter-spacing: .5px; }
+  .tag { font-size: 1.15rem; color: var(--muted); margin: 0; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 20px 48px; }
+  h2 { text-align: center; margin: 30px 0 18px; }
+  .card {
+    display: flex; gap: 20px; align-items: center; background: #fff; border: 4px solid #fff;
+    border-radius: 26px; padding: 20px; box-shadow: 0 10px 30px rgba(90,56,38,.12);
+  }
+  .card img { width: 110px; height: 110px; border-radius: 26px; flex-shrink: 0; }
+  .card h3 { margin: 0 0 6px; font-size: 1.5rem; color: var(--pink); }
+  .card p { margin: 0 0 12px; color: var(--muted); line-height: 1.55; }
+  .pill {
+    display: inline-block; padding: 8px 16px; border-radius: 999px; text-decoration: none;
+    font-weight: 700; margin: 4px 6px 0 0; font-size: .95rem;
+  }
+  .pill.main { background: var(--pink); color: #fff; }
+  .pill.soft { background: #fff0f5; color: #c2185b; }
+  .about { background: rgba(255,255,255,.75); border-radius: 22px; padding: 20px 24px; margin-top: 28px; line-height: 1.6; }
+  footer { text-align: center; color: var(--muted); padding: 10px 20px 40px; font-size: .9rem; }
+  footer a { color: var(--choc); font-weight: 600; }
+  @media (max-width: 560px) { .card { flex-direction: column; text-align: center; } }
+</style>
+</head>
+<body>
+  <section class="hero">
+    <div class="logo">AKA</div>
+    <h1>AKA Labs</h1>
+    <p class="tag">Cozy games and useful apps, made with care in Bangladesh.</p>
+  </section>
+
+  <div class="wrap">
+    <h2>Our games</h2>
+    <div class="card">
+      <img src="sort-cafe/icon.png" alt="Sort Café icon">
+      <div>
+        <h3>Sort Café</h3>
+        <p>Pour and sort colourful drinks until every cup holds one flavour. A relaxing,
+           colourful puzzle game with hundreds of levels, playable offline.</p>
+        <span class="pill main">Coming soon to Google Play</span>
+        <a class="pill soft" href="sort-cafe/privacy.html">Privacy policy</a>
+      </div>
+    </div>
+
+    <div class="about">
+      <strong>About us.</strong> AKA Labs is an independent studio making simple, beautiful games and
+      apps that respect your time and your privacy. Questions, feedback or support:
+      <a href="mailto:syedantor7@gmail.com">syedantor7@gmail.com</a>
+    </div>
+  </div>
+
+  <footer>
+    © 2026 AKA Labs · <a href="sort-cafe/privacy.html">Sort Café privacy policy</a>
+  </footer>
+</body>
+</html>
